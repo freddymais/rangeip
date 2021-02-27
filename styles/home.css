@@ -17,10 +17,11 @@
 }
 .card {
   margin: 1rem;
+  min-width: 40rem;
   flex-basis: 50%;
   padding: 1.5rem;
   text-align: center;
-  background: #3d6391;
+  background: #2b4f7e;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
