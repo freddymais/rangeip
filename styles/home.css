@@ -1,0 +1,100 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2cae8;
+}
+@keyframes shadow-drop-bl {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 1);
+  }
+}
+.card {
+  margin: 1rem;
+  flex-basis: 50%;
+  padding: 1.5rem;
+  text-align: center;
+  background: #3d6391;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  animation: shadow-drop-bl 0.8s both;
+}
+.card:hover {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  90% {
+    transform: translateX(-4px);
+  }
+}
+.card button {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  min-width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  transition: color 0.6s ease, background 0.5s ease;
+  background: #008cff;
+}
+button:active,
+button:hover {
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  color: #008cff;
+  background: #cbe0f7;
+}
+.card input {
+  background: #fafafa;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  min-width: 400px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+.bottom img {
+  height: 3rem;
+}
